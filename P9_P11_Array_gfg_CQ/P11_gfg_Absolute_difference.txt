@@ -1,0 +1,4 @@
+ // https://www.geeksforgeeks.org/problems/absolute-difference-11156/1
+
+ // My solution
+
