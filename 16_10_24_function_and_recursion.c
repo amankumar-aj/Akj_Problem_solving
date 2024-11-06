@@ -30,6 +30,8 @@ int main() {
     }
 printf("----------------------------------------------PROBLEM 2 Mean Median-------------------------------");
     //Write a program to find mean and median of five numbers
+    printf("Enter five numbers");
+
     
     return 0;
 }

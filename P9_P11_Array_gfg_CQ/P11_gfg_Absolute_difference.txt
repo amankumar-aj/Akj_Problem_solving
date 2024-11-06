@@ -1,4 +1,38 @@
  // https://www.geeksforgeeks.org/problems/absolute-difference-11156/1
 
  // My solution
+ // User function Template for Java
+
+ class Solution {
+     public ArrayList<Integer> getDigitDiff1AndLessK(int[] arr, int k) {
+         // code here
+   ArrayList<Integer> result = new ArrayList<>();
+    int num, l_digit, p_digit, temp;
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] < k && arr[i] >= 10){
+            boolean isValid = true;
+            temp = arr[i];
+
+            while (temp > 0) {
+                l_digit = temp % 10;
+                temp = temp / 10;
+                if (temp > 0) {
+                    p_digit = temp % 10;
+                    if (Math.abs(l_digit - p_digit) != 1) {
+                        isValid = false;
+                        break;
+                        }
+
+                }
+
+            }
+            if (isValid) {
+                result.add(arr[i]);
+
+            }
+        }
+     }
+     return result;
+  }
+ }
 
