@@ -1,0 +1,26 @@
+   https://leetcode.com/problems/container-with-most-water/description/
+
+int maxArea(int* height, int heightSize) {
+    int l=0;
+    int r=heightSize-1;
+    int max_area=0;
+    while(l<r){
+        int width=r-l;
+        int min_height;
+        if(height[l]<height[r]){
+            min_height=height[l];
+        }
+        else{ min_height=height[r];}
+
+        int area=width*min_height;
+
+        if(area>max_area){
+            max_area=area;
+        }
+        if (height[l] < height[r]) {
+            l++; }
+        else { r--; }
+    }
+
+    return max_area;
+}
