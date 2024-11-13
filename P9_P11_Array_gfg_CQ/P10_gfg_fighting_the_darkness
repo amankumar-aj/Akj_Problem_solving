@@ -3,6 +3,7 @@ solution code
 
 // User function Template for Java
 
+
 class Solution {
     long maxDays(int arr[]) {
         // code here
