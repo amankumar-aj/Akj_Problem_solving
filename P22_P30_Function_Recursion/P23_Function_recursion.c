@@ -5,14 +5,30 @@
 
 #include<stdio.h>
 
-void palindrome(int n) {
-    int temp=n,rev=0;
-        while(n>0) {
-            n=n%10;
-            rev=rev
-        }
+int Palindrome(int num) {
+
+    int rev= 0;
+
+    while (num > 0) {
+        int digit = num % 10;
+        rev = rev * 10 + digit;
+        num /= 10;
+    }
+
+    return rev;
 }
 int main() {
+
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    int temp=Palindrome(number);
+
+    if (number==temp) {
+        printf("%d is a palindrome.\n", number);
+    } else {
+        printf("%d is not a palindrome.\n", number);
+    }
 
  return 0;
 }
