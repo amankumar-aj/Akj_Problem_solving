@@ -4,7 +4,7 @@
  //PROGRAM -28 Strong numbers less than or equal to N
 #include<stdio.h>
 int main() {
-
+//a
 
  return 0;
 }

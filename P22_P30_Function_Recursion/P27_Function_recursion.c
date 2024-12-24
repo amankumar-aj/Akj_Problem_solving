@@ -4,6 +4,6 @@
 // PROGRAM-27 Armstrong number in the range
 #include<stdio.h>
 int main() {
-
+//a
  return 0;
 }
